@@ -53,12 +53,8 @@ const FavoriteButton: React.FC<FavoriteButtonProps> = ({ movieId }) => {
   }, [
     movieId,
     isFavorite,
-    currentUser,
-    currentUser?.favoriteIds,
     addFavorite,
     deleteFavorite,
-    addFavorite.data,
-    deleteFavorite.data,
   ]);
 
   const Icon = isFavorite ? CheckIcon : PlusIcon;
